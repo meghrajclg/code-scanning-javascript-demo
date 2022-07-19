@@ -5,7 +5,7 @@ validateonSubmit() {
     this.form.addEventListener("submit", (e) => {
         // remove default functionality 
         e.preventDefault();
-        var error = 0;
+        
         // loop through the fields and check them against a function for validation
         self.fields.forEach((field) => {
             const input = document.querySelector(`#${field}`);
